@@ -1,0 +1,14 @@
+// MIDI to Synthesized Singing Workflow
+digraph {
+	A [label=Start color=lightgreen shape=ellipse style=filled]
+	B [label="Step 0: MIDI to MusicXML" color=lightblue shape=box style=filled]
+	C [label="Step 1: Extract Main Melody" color=lightblue shape=box style=filled]
+	D [label="Step 2: Fill Lyrics to MusicXML" color=lightblue shape=box style=filled]
+	E [label="Step 3: Synthesize with Sinsy CLI" color=lightblue shape=box style=filled]
+	F [label=End color=lightgreen shape=ellipse style=filled]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+}
